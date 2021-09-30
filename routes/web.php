@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\VarDumper\Cloner\Data;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $name = 'Sergio';
 
-    return view('home', compact('name'));
-});
+    $data = [
+        'name' => 'Sergio',
+        'last_name' => 'Janko'
+    ];
+
+    return view('home', $data);
+})->name('home');
+
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');

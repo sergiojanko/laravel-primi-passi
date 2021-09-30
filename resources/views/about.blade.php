@@ -7,11 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href="{{ route('about') }}">About</a>
-        <a href="{{ route('blog') }}">Blog</a>
-    </header>
-    <h1>Hello Boolean!</h1>
-    <h2>Nome utente: {{ $name }} {{$last_name}}</h2>
+    <h1>Questa è la pagina About</h1>
 </body>
 </html>
