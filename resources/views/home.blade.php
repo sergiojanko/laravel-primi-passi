@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Hello Boolean!</h1>
+    <h2>Nome utente: {{ $name }}</h2>
 </body>
 </html>
